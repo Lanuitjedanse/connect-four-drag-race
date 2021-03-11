@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Anton", sans-serif;
+}
+
+.board {
+    /* border: 3px solid black; */
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slot {
+    /* border: 1px solid white; */
+    background-color: hotpink;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hole {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+}
+
+.player1 .hole {
+    /* background-color: hotpink; */
+    background-image: url("sasha-velour-chip.jpg");
+}
+
+.player2 .hole {
+    /* background-color: cyan; */
+    background-image: url("shea-coulee-chip.jpg");
+}
+
+.winner-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 2s;
+}
+
+p.winner {
+    background-color: white;
+    text-align: center;
+    font-size: 30px;
+    width: 500px;
+    height: 70px;
+    border: 3px solid hotpink;
+    position: absolute;
+    top: -138px;
+    padding: 10px;
+}
+
+.reset-game {
+    width: 100px;
+    background-color: Hotpink;
+    font-size: 20px;
+    color: white;
+    font-family: "Anton", sans-serif;
+}
+
+.on {
+    transform: translateY(450px);
+}
+
+.current-player-box {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-player {
+    width: 600px;
+    height: 80px;
+    border: 3px solid hotpink;
+    font-size: 30px;
+    text-align: center;
+    background: hotpink;
+    color: white;
+    /* padding: 2px; */
+}
+
+.rupaul {
+    height: 80px;
+    width: 80px;
+    background-image: url("Rupaul-chip.jpg");
+}
+
+h4 {
+    margin: 15px;
+}
+
+.rupaul-win {
+    height: 80px;
+    width: 80px;
+    background-image: url("rupaulwin .jpeg");
+}
